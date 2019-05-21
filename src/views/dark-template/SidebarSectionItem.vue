@@ -2,20 +2,20 @@
   <v-layout>
     <v-flex
       v-if="hasIcon"
-      xs1
+      xs2
     >
       <v-icon>
         {{ item.icon }}
       </v-icon>
     </v-flex>
     <v-flex
-      :xs11="hasIcon"
+      :xs10="hasIcon"
       :xs12="!hasIcon"
     >
-      <strong>
+      <div>
         {{ item.name }}
-      </strong>
-      <p>
+      </div>
+      <p class="grey--text">
         {{ item.text }}
       </p>
     </v-flex>
