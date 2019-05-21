@@ -14,11 +14,18 @@
             justify-center
           >
             <v-flex
-              xs12
-              sm8
-              md4
+              md10
             >
-              asdasd fas f
+              <v-layout>
+                <v-flex
+                  md4
+                >
+                  <sidebar />
+                </v-flex>
+                <v-flex md8>
+                  <main-content />
+                </v-flex>
+              </v-layout>
             </v-flex>
           </v-layout>
         </v-container>
@@ -28,7 +35,12 @@
 </template>
 
 <script>
-export default { name: 'DarkTemplateContainer' }
+import Sidebar from '@/views/dark-template/Sidebar'
+import MainContent from '@/views/dark-template/MainContent'
+export default {
+  name      : 'DarkTemplateContainer',
+  components: { MainContent, Sidebar },
+}
 </script>
 
 <style scoped>
