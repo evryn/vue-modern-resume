@@ -14,11 +14,42 @@
         </span>
       </div>
 
-      <sidebar-section
-        v-for="(section, i) in sections"
-        :key="i"
-        :options="section"
-      />
+      <sidebar-section :options="sections.info" />
+      <sidebar-section :options="sections.socials" />
+      <sidebar-section :options="sections.hobbies">
+        <template v-slot:item="{item}">
+          <v-chip>
+            <v-avatar>
+              <v-icon>
+                {{ item.icon }}
+              </v-icon>
+            </v-avatar>
+            {{ item.text }}
+          </v-chip>
+        </template>
+      </sidebar-section>
+      <sidebar-section :options="sections.languages">
+        <template v-slot:items="{items}">
+          <v-layout>
+            <v-flex
+              v-for="(item, i) in items"
+              :key="i"
+              md3
+            >
+              <v-progress-circular
+                rotate="360"
+                size="75"
+                width="2"
+                :value="item.value"
+                color="white"
+                class="ma-2"
+              >
+                {{ item.text }}
+              </v-progress-circular>
+            </v-flex>
+          </v-layout>
+        </template>
+      </sidebar-section>
     </v-card-text>
   </v-card>
 </template>
@@ -31,8 +62,8 @@ export default {
   components: { SidebarSection, Avatar },
   data () {
     return {
-      sections: [
-        {
+      sections: {
+        info: {
           title: 'INFO',
           items: [
             {
@@ -62,7 +93,7 @@ export default {
             },
           ],
         },
-        {
+        socials: {
           title: 'SOCIALS',
           items: [
             {
@@ -83,7 +114,73 @@ export default {
             },
           ],
         },
-      ],
+        hobbies: {
+          title: 'HOBBIES',
+          items: [
+            {
+              icon: 'mdi-biohazard',
+              text: 'Challenges',
+            },
+            {
+              icon: 'mdi-bike',
+              text: 'Cycling',
+            },
+            {
+              icon: 'mdi-image-filter-hdr',
+              text: 'Nature',
+            },
+            {
+              icon: 'mdi-auto-fix',
+              text: 'Hacking Stuffs',
+            },
+            {
+              icon: 'mdi-teach',
+              text: 'Teaching',
+            },
+            {
+              icon: 'mdi-karate',
+              text: 'Karate',
+            },
+            {
+              icon: 'mdi-music',
+              text: 'Music',
+            },
+            {
+              icon: 'mdi-account-group',
+              text: 'Leadership',
+            },
+            {
+              icon: 'mdi-book-open-page-variant',
+              text: 'Books',
+            },
+            {
+              icon: 'mdi-android-debug-bridge',
+              text: 'Making Bugs!',
+            },
+          ],
+        },
+        languages: {
+          title: 'LANGUAGES',
+          items: [
+            {
+              text : 'English',
+              value: 70,
+            },
+            {
+              text : 'Turkish',
+              value: 45,
+            },
+            {
+              text : 'Azeri',
+              value: 100,
+            },
+            {
+              text : 'Persian',
+              value: 100,
+            },
+          ],
+        },
+      },
     }
   },
 }
