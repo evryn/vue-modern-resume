@@ -5,6 +5,15 @@
   >
     <v-card-text>
       <avatar />
+      <div class="text-sm-center mb-4 mt-3">
+        <h1>
+          Amirreza <span class="light-blue--text text--lighten-3">Nasiri</span>
+        </h1>
+        <span>
+          A challenge-loving web developer
+        </span>
+      </div>
+
       <sidebar-section
         v-for="(section, i) in sections"
         :key="i"
@@ -26,11 +35,6 @@ export default {
         {
           title: 'INFO',
           items: [
-            {
-              name: 'Name',
-              icon: 'person',
-              text: 'Amirreza Nasiri',
-            },
             {
               name: 'Address',
               icon: 'place',
