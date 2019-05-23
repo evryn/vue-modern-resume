@@ -1,14 +1,29 @@
 <template>
-  <div>
+  <div class="mb-4">
     <div class="title mb-3">
       {{ options.title }}
     </div>
     <slot v-if="$slots.default" />
-    <sidebar-section-item
-      v-for="(item, index) in options.items"
-      :key="index"
-      :item="item"
-    />
+    <slot v-else-if="$scopedSlots.items">
+      <slot
+        name="items"
+        :items="options.items"
+      />
+    </slot>
+    <template v-else-if="$scopedSlots.item">
+      <slot
+        v-for="(item) in options.items"
+        name="item"
+        :item="item"
+      />
+    </template>
+    <template v-else>
+      <sidebar-section-item
+        v-for="(item, index) in options.items"
+        :key="index"
+        :item="item"
+      />
+    </template>
   </div>
 </template>
 
