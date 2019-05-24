@@ -11,6 +11,27 @@
         Interested and skilled in different topics of Information Technology such as programming, web development, and computer and network security.
       </main-content-section>
       <main-content-section
+        v-if="prouds"
+        title="What am I proud of?"
+      >
+        <v-layout
+          v-for="(proud, i) in prouds"
+          :key="i"
+        >
+          <v-flex xs1>
+            <v-icon right>
+              {{ proud.icon }}
+            </v-icon>
+          </v-flex>
+          <v-flex xs11>
+            <p class="align-center">
+              <strong>{{ proud.text }}</strong><br>
+              <small>{{ proud.source }}</small>
+            </p>
+          </v-flex>
+        </v-layout>
+      </main-content-section>
+      <main-content-section
         v-if="educations"
         title="Education"
       >
@@ -85,6 +106,28 @@ export default {
   name      : 'MainContent',
   components: { Timeline, MainContentSection },
   data      : () => ({
+    prouds: [
+      {
+        icon  : 'mdi-help-rhombus-outline',
+        text  : 'Answered 5.5M+ questions for people!',
+        source: '(Bytegate.ir sessions)',
+      },
+      {
+        icon  : 'mdi-library-music',
+        text  : 'Made people enjoy and learn language for equivalent of 29+ years (older than myself!)',
+        source: '(Bobet.ir and its channel downloads)',
+      },
+      {
+        icon  : 'mdi-timer-sand',
+        text  : 'Saved +110 days of time of students, writers and etc!',
+        source: '(Delix.ir service usages)',
+      },
+      {
+        icon  : 'mdi-account-multiple',
+        text  : 'Tried to cover small part of 7 people expenses.',
+        source: '(My awesome colleagues)',
+      },
+    ],
     educations: [
       {
         from       : '2015',
