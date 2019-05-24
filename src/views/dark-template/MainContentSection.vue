@@ -1,7 +1,31 @@
 <template>
-  <div class="mb-5">
+  <v-card
+    v-if="true"
+    flat
+  >
+    <v-card-title>
+      <h3 class="title font-weight-light mb-1">
+        {{ title }}
+      </h3>
+      <v-spacer />
+      <slot name="actions" />
+    </v-card-title>
+    <v-card-text>
+      <slot />
+    </v-card-text>
+  </v-card>
+  <div
+    v-else
+    class="mb-5"
+  >
     <div class="title mb-3">
-      {{ title }}
+      <h2>
+        {{ title }}
+      </h2>
+      <template v-if="$slots.actions">
+        <v-spacer />
+        <slot name="actions" />
+      </template>
     </div>
     <slot />
   </div>
