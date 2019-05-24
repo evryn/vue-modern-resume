@@ -94,7 +94,6 @@
           </template>
         </v-layout>
       </main-content-section>
-      <timeline />
     </v-card-text>
   </v-card>
 </template>

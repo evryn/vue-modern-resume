@@ -20,10 +20,17 @@
                 <v-flex
                   md4
                 >
-                  <sidebar />
+                  <sidebar class="fill-height" />
                 </v-flex>
-                <v-flex md8>
-                  <main-content />
+                <v-flex
+                  md8
+                >
+                  <main-content class="fill-height" />
+                </v-flex>
+              </v-layout>
+              <v-layout>
+                <v-flex md12>
+                  <timeline />
                 </v-flex>
               </v-layout>
             </v-flex>
@@ -37,16 +44,19 @@
 <script>
 import Sidebar from '@/views/dark-template/Sidebar'
 import MainContent from '@/views/dark-template/MainContent'
+import Timeline from '@/views/dark-template/Timeline'
 export default {
   name      : 'DarkTemplateContainer',
-  components: { MainContent, Sidebar },
+  components: {
+    Timeline, MainContent, Sidebar,
+  },
 }
 </script>
 
 <style scoped>
 #dark-template {
-height: 100%;
-background: url("/img/backgrounds/city.jpg") no-repeat center;
-background-size: cover;
+  height: 100%;
+  background: url("/img/backgrounds/city.jpg") no-repeat center;
+  background-size: cover;
 }
 </style>

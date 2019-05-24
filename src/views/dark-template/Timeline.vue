@@ -1,71 +1,78 @@
-<template xmlns:v-slot="http://www.w3.org/1999/XSL/Transform">
-  <main-content-section
-    :title="detailed ? 'My Life in a Nutshell' : 'My Experiences'"
+<template>
+  <v-card
+    color="grey lighten-4"
+    light
   >
-    <template slot="actions">
-      <div>
-        <v-switch
-          v-model="detailed"
-          :label="detailed ? 'Detailed' : 'Summary'"
-        />
-      </div>
-    </template>
-
-    <v-timeline
-      dense
-    >
-      <v-timeline-item
-        v-for="(item, i) in orderedItems"
-        :key="i"
-        :icon="item.icon ? item.icon : ''"
-        :class="{transparent: item.transparent}"
-        large
+    <v-card-text>
+      <main-content-section
+        :title="detailed ? 'My Life in a Nutshell' : 'My Experiences'"
       >
-        <!-- TODO: Cleanup :icon and similar -->
-        <template
-          v-if="item.iconImage"
-          v-slot:icon
-        >
-          <v-avatar>
-            <img
-              :src="item.iconImage"
-            >
-          </v-avatar>
+        <template slot="actions">
+          <div>
+            <v-switch
+              v-model="detailed"
+              :label="detailed ? 'Detailed' : 'Summary'"
+            />
+          </div>
         </template>
-        <template v-slot:opposite />
-        <v-layout>
-          <v-flex
-            md1
-            align-self-center
+
+        <v-timeline
+          dense
+        >
+          <v-timeline-item
+            v-for="(item, i) in orderedItems"
+            :key="i"
+            :icon="item.icon ? item.icon : ''"
+            :class="{transparent: item.transparent}"
+            large
           >
-            <span>{{ item.year }}</span>
-          </v-flex>
-          <v-flex md11>
-            <v-card class="elevation-1">
-              <v-card-title class="pb-0">
-                <h3>{{ item.title }}</h3>
-              </v-card-title>
-              <v-card-text>
-                <span
-                  v-if="item.text"
-                  class="pre"
-                >{{ item.text }}</span>
-                <div
-                  v-else-if="item.html"
-                  v-html="item.html"
-                />
-                <v-img
-                  :max-height="item.imageHeight ? item.imageHeight : ''"
-                  class="mt-2"
-                  :src="item.image"
-                />
-              </v-card-text>
-            </v-card>
-          </v-flex>
-        </v-layout>
-      </v-timeline-item>
-    </v-timeline>
-  </main-content-section>
+            <!-- TODO: Cleanup :icon and similar -->
+            <template
+              v-if="item.iconImage"
+              v-slot:icon
+            >
+              <v-avatar>
+                <img
+                  :src="item.iconImage"
+                >
+              </v-avatar>
+            </template>
+            <template v-slot:opposite />
+            <v-layout>
+              <v-flex
+                md1
+                align-self-center
+              >
+                <span>{{ item.year }}</span>
+              </v-flex>
+              <v-flex md11>
+                <v-card class="elevation-1">
+                  <v-card-title class="pb-0">
+                    <h3>{{ item.title }}</h3>
+                  </v-card-title>
+                  <v-card-text>
+                    <span
+                      v-if="item.text"
+                      class="pre"
+                    >{{ item.text }}</span>
+                    <div
+                      v-else-if="item.html"
+                      v-html="item.html"
+                    />
+                    <v-img
+                      :max-height="item.imageHeight ? item.imageHeight : ''"
+                      class="mt-2"
+                      :src="item.image"
+                    />
+                  </v-card-text>
+                </v-card>
+              </v-flex>
+            </v-layout>
+          </v-timeline-item>
+        </v-timeline>
+      </main-content-section>
+    </v-card-text>
+  </v-card>
 </template>
 
 <script>
