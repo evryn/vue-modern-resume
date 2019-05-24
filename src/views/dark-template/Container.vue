@@ -45,10 +45,24 @@
 import Sidebar from '@/views/dark-template/Sidebar'
 import MainContent from '@/views/dark-template/MainContent'
 import Timeline from '@/views/dark-template/Timeline'
+import LeaderLine from 'leader-line'
 export default {
   name      : 'DarkTemplateContainer',
   components: {
     Timeline, MainContent, Sidebar,
+  },
+  mounted () {
+    // eslint-disable-next-line no-unused-vars
+    const line = new LeaderLine(
+      document.getElementById('to-timeline'),
+      document.getElementById('timeline'),
+      {
+        size      : 2,
+        color     : this.$vuetify.theme.primary,
+        startLabel: LeaderLine.captionLabel('To The Journey ...'),
+        // middleLabel: LeaderLine.pathLabel('This is additional label'),
+      }
+    )
   },
 }
 </script>

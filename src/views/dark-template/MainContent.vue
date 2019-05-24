@@ -55,6 +55,7 @@
       </main-content-section>
       <main-content-section
         v-if="skills"
+        id="to-timeline"
         title="Skills and Expertize"
       >
         <v-layout wrap>
@@ -100,10 +101,9 @@
 
 <script>
 import MainContentSection from '@/views/dark-template/MainContentSection'
-import Timeline from '@/views/dark-template/Timeline'
 export default {
   name      : 'MainContent',
-  components: { Timeline, MainContentSection },
+  components: { MainContentSection },
   data      : () => ({
     prouds: [
       {

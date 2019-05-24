@@ -5,6 +5,7 @@
   >
     <v-card-text>
       <main-content-section
+        id="timeline"
         :title="detailed ? 'My Life in a Nutshell' : 'My Experiences'"
       >
         <template slot="actions">
