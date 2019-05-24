@@ -113,7 +113,7 @@ export default {
       },
       {
         icon  : 'mdi-library-music',
-        text  : 'Made people enjoy and learn language for equivalent of 29+ years (older than myself!)',
+        text  : 'Made people enjoy and learn a new language for equivalent of 29+ years (older than myself!)',
         source: '(Bobet.ir and its channel downloads)',
       },
       {
