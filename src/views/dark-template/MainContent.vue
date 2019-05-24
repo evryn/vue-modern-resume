@@ -73,15 +73,17 @@
           </template>
         </v-layout>
       </main-content-section>
+      <timeline />
     </v-card-text>
   </v-card>
 </template>
 
 <script>
 import MainContentSection from '@/views/dark-template/MainContentSection'
+import Timeline from '@/views/dark-template/Timeline'
 export default {
   name      : 'MainContent',
-  components: { MainContentSection },
+  components: { Timeline, MainContentSection },
   data      : () => ({
     educations: [
       {
@@ -157,7 +159,7 @@ export default {
       },
       { divider: true },
       {
-        title: 'Content Marketing (+450 done)',
+        title: 'Content Marketing (+340 done)',
         icon : 'mdi-text',
         value: 96,
       },
