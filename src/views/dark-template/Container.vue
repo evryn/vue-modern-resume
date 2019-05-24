@@ -31,6 +31,7 @@
               <v-layout>
                 <v-flex md12>
                   <timeline />
+                  <endless-timeline />
                 </v-flex>
               </v-layout>
             </v-flex>
@@ -46,10 +47,14 @@ import Sidebar from '@/views/dark-template/Sidebar'
 import MainContent from '@/views/dark-template/MainContent'
 import Timeline from '@/views/dark-template/Timeline'
 import LeaderLine from 'leader-line'
+import EndlessTimeline from '@/views/dark-template/EndelessTimeline'
 export default {
   name      : 'DarkTemplateContainer',
   components: {
-    Timeline, MainContent, Sidebar,
+    EndlessTimeline,
+    Timeline,
+    MainContent,
+    Sidebar,
   },
   mounted () {
     // eslint-disable-next-line no-unused-vars

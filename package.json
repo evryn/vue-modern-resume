@@ -11,6 +11,7 @@
     "core-js": "^2.6.5",
     "leader-line": "^1.0.5",
     "vue": "^2.6.10",
+    "vue-content-loading": "^1.6.0",
     "vue-router": "^3.0.3",
     "vuetify": "^1.5.5"
   },
