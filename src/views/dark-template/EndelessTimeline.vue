@@ -44,7 +44,7 @@
         >{{ message.text }}</span>
         <div
           v-if="!loading"
-          v-scroll="loadFuture"
+          v-scroll="scrolled"
         />
       </div>
       <v-progress-circular
@@ -130,6 +130,13 @@ export default {
     ],
   }),
   methods: {
+    scrolled (event) {
+      let element   = event.target
+      if (!element.scrollTop)
+        element = element.documentElement
+      if (element.scrollHeight - document.documentElement.scrollTop <= element.clientHeight + 50)
+        this.loadFuture()
+    },
     loadFuture: debounce(function () {
       if (this.loading || this.message.to === null)
         return
