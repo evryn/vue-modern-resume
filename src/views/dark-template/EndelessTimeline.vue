@@ -134,7 +134,8 @@ export default {
       let element   = event.target
       if (!element.scrollTop)
         element = element.documentElement
-      if (element.scrollHeight - document.documentElement.scrollTop <= element.clientHeight + 50)
+      // TODO: it's not working correctly on mobile
+      if (element.scrollHeight - element.scrollTop <= element.clientHeight + 50)
         this.loadFuture()
     },
     loadFuture: debounce(function () {
