@@ -113,7 +113,7 @@ export default {
         to  : 8,
       },
       {
-        text: 'Of course with a lot of hardships ... a LOT OF them! ...',
+        text: 'Of course with a lot of hardship ... a LOT OF them! ...',
         from: 9,
         to  : 9,
       },

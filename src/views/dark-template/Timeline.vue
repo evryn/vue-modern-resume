@@ -52,19 +52,25 @@
                     <h3>{{ item.title }}</h3>
                   </v-card-title>
                   <v-card-text>
-                    <span
-                      v-if="item.text"
-                      class="pre"
-                    >{{ item.text }}</span>
-                    <div
-                      v-else-if="item.html"
-                      v-html="item.html"
-                    />
-                    <v-img
-                      :max-height="item.imageHeight ? item.imageHeight : ''"
-                      class="mt-2"
-                      :src="item.image"
-                    />
+                    <v-layout>
+                      <v-flex md7>
+                        <span
+                          v-if="item.text"
+                          class="pre"
+                        >{{ item.text }}</span>
+                        <div
+                          v-else-if="item.html"
+                          v-html="item.html"
+                        />
+                      </v-flex>
+                      <v-flex md5>
+                        <v-img
+                          :max-height="item.imageHeight ? item.imageHeight : ''"
+                          class="mt-2"
+                          :src="item.image"
+                        />
+                      </v-flex>
+                    </v-layout>
                   </v-card-text>
                 </v-card>
               </v-flex>
@@ -202,7 +208,7 @@ export default {
         title: 'Open Sourced Telegram Web Bridge',
         html : `
           <p>
-              Current Status: <span class="light-blue--text lighten-3">Open Sourced</span> and available on my <a href="https://github.com/AmirrezaNasiri/usb-keystroke-injector">my GitHub</a>
+              Current Status: <span class="light-blue--text lighten-3">Open Sourced</span> and available on my <a href="https://github.com/AmirrezaNasiri/telegram-web-bridge">my GitHub</a>
           </p>
           <p>
             Telegram Web Bridge is a two-way, web-based, proxy-like application which can act as a middleman for Telegram Bot API requests (from your real application to Telegram) and Webhooks (from Telegram to your real application).
@@ -250,9 +256,23 @@ export default {
         iconImage: 'img/timeline/smo.li-icon.png',
       },
       {
+        year : '2019',
+        title: 'Open Sourced This Resume',
+        html : `
+          <p>
+              Current Status: <span class="light-blue--text lighten-3">Open Sourced</span> and available on my <a href="https://github.com/AmirrezaNasiri/vue-modern-resume">my GitHub</a>
+          </p>
+          <p>
+            A VueJS-based and powered-by-Vuetify (material UI kit) resume template which you're currently seeing it.
+          </p>
+        `,
+        image: 'img/timeline/vue-modern-resume.png',
+        icon : 'mdi-github-circle',
+      },
+      {
         year : 'So far ...',
         title: 'Written 340+ Unique Articles!',
-        html : `I'm guy the who loves teaching! So far, I've written 340+ unique articles which most of the are computer-related. You can access them here:
+        html : `I'm the guy who loves teaching! So far, I've written 340+ unique articles which most of the are computer-related. You can access them here:
                     <ul><li><a href="https://bytegate.ir/author/amirrezanasiri/">My posts on Bytegate.ir</a> (Computer-related)</li><li><a href="http://bobet.ir/author/amirrezanasiri/">My posts on Bobet.ir</a> (Translations)</li></ul>`,
         icon: 'mdi-fountain-pen-tip',
       },
