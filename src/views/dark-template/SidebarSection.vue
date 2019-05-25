@@ -4,12 +4,12 @@
       {{ options.title }}
     </div>
     <slot v-if="$slots.default" />
-    <slot v-else-if="$scopedSlots.items">
+    <template v-else-if="$scopedSlots.items">
       <slot
         name="items"
         :items="options.items"
       />
-    </slot>
+    </template>
     <template v-else-if="$scopedSlots.item">
       <slot
         v-for="(item) in options.items"

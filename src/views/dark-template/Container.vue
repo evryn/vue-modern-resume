@@ -15,8 +15,9 @@
           >
             <v-flex
               md10
+              sm12
             >
-              <v-layout>
+              <v-layout wrap>
                 <v-flex
                   md4
                 >

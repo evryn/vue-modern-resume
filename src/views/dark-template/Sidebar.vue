@@ -30,24 +30,34 @@
       </sidebar-section>
       <sidebar-section :options="sections.languages">
         <template v-slot:items="{items}">
-          <v-layout>
-            <v-flex
-              v-for="(item, i) in items"
-              :key="i"
-              md3
+          <v-container pa-0>
+            <v-layout
+              wrap
+              class="text-xs-center"
             >
-              <v-progress-circular
-                rotate="360"
-                size="75"
-                width="2"
-                :value="item.value"
-                color="white"
-                class="ma-2"
+              <template
+                v-for="(item, i) in items"
               >
-                {{ item.text }}
-              </v-progress-circular>
-            </v-flex>
-          </v-layout>
+                <v-flex
+                  :key="i"
+                  md3
+                  sm4
+                  xs6
+                >
+                  <v-progress-circular
+                    rotate="360"
+                    size="65"
+                    width="2"
+                    :value="item.value"
+                    color="white"
+                    class="ma-2"
+                  >
+                    {{ item.text }}
+                  </v-progress-circular>
+                </v-flex>
+              </template>
+            </v-layout>
+          </v-container>
         </template>
       </sidebar-section>
     </v-card-text>
@@ -81,6 +91,11 @@ export default {
               icon: 'cake',
               text: 'Dec 7, 1996',
             },
+            {
+              name: 'Habitation',
+              icon: 'place',
+              text: 'Tabriz, Iran',
+            },
           ],
         },
         socials: {
@@ -111,6 +126,11 @@ export default {
         hobbies: {
           title: 'HOBBIES',
           items: [
+
+            {
+              icon: 'mdi-bullseye',
+              text: 'Getting out of Safe Zone',
+            },
             {
               icon: 'mdi-biohazard',
               text: 'Challenges',

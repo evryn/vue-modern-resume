@@ -18,13 +18,19 @@
           v-for="(proud, i) in prouds"
           :key="i"
         >
-          <v-flex xs1>
+          <v-flex
+            md1
+            xs3
+          >
             <v-icon right>
               {{ proud.icon }}
             </v-icon>
           </v-flex>
-          <v-flex xs11>
-            <p class="align-center">
+          <v-flex
+            md11
+            xs9
+          >
+            <p>
               <strong>{{ proud.text }}</strong><br>
               <small>{{ proud.source }}</small>
             </p>
@@ -66,12 +72,14 @@
               v-if="skill.divider"
               :key="i"
               md12
+              xs12
               mb-4
             />
             <v-flex
               v-else
               :key="i"
               md6
+              xs12
             >
               <div
                 class="mr-2 ml-2"

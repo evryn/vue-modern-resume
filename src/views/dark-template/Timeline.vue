@@ -42,18 +42,25 @@
             <v-layout>
               <v-flex
                 md1
+                xs3
                 align-self-center
               >
                 <span>{{ item.year }}</span>
               </v-flex>
-              <v-flex md11>
+              <v-flex
+                md11
+                xs9
+              >
                 <v-card class="elevation-1">
                   <v-card-title class="pb-0">
                     <h3>{{ item.title }}</h3>
                   </v-card-title>
                   <v-card-text>
-                    <v-layout>
-                      <v-flex md7>
+                    <v-layout wrap>
+                      <v-flex
+                        md7
+                        xs12
+                      >
                         <span
                           v-if="item.text"
                           class="pre"
@@ -63,7 +70,10 @@
                           v-html="item.html"
                         />
                       </v-flex>
-                      <v-flex md5>
+                      <v-flex
+                        md5
+                        xs12
+                      >
                         <v-img
                           :max-height="item.imageHeight ? item.imageHeight : ''"
                           class="mt-2"
@@ -95,7 +105,7 @@ export default {
         transparent: true,
         year       : '1996',
         title      : 'Born on Dec 7, 1996',
-        text       : 'With a chance of %0.00000000000512\nI\'m completely aware of life value!',
+        html       : 'With a chance of %0.00000000000512\nI\'m completely aware of life value!',
         icon       : 'mdi-cake-variant',
       },
       {
