@@ -34,7 +34,7 @@
             >
               <v-avatar>
                 <img
-                  :src="item.iconImage"
+                  :src="publicPath(item.iconImage)"
                 >
               </v-avatar>
             </template>
@@ -75,9 +75,10 @@
                         xs12
                       >
                         <v-img
+                          v-if="item.image"
                           :max-height="item.imageHeight ? item.imageHeight : ''"
                           class="mt-2"
-                          :src="item.image"
+                          :src="publicPath(item.image)"
                         />
                       </v-flex>
                     </v-layout>
