@@ -125,7 +125,7 @@ export default {
                         Team: <span class="">1-5 person(s) (variable)</span>
                     </p>
                     <p>
-                        The main goal of <a href="https://bytegate.ir">Bytegate.ir</a> is to extend IT-related articles in Persian web with pretty easy-to-understand and picture-driven articles.
+                        The main goal of <a href="https://bytegate.ir/?utm_source=portiflo&utm_medium=link&utm_content=timeline&utm_campaign=bytegate">Bytegate.ir</a> is to extend IT-related articles in Persian web with pretty easy-to-understand and picture-driven articles.
                     </p>
                     <p>
                         The reason I founded Bytegate.ir was because of a disputing in my school about computer stuffs. Soon, I realized I know NOTHING about computers! Bytegate.ir was the place I started learning amazing things.
@@ -145,7 +145,7 @@ export default {
               Team: <span class="">1-6 person(s) (variable)</span>
           </p>
           <p>
-              The purpose of <a href="http://bobet.ir">Bobet.ir</a> is to let people learn English and Turkish languages in a different way by publish musics with their lyrics, Persian translations and pronunciations of the actual lyric in Persian letters. The website reached 9000 visits/day. More than 270+ musics with contents are published there.
+              The purpose of <a href="http://bobet.ir/?utm_source=portiflo&utm_medium=link&utm_content=timeline&utm_campaign=bobet">Bobet.ir</a> is to let people learn English and Turkish languages in a different way by publish musics with their lyrics, Persian translations and pronunciations of the actual lyric in Persian letters. The website reached 9000 visits/day. More than 270+ musics with contents are published there.
           </p>
           <p>
               The reason behind founding Bobet.ir was pretty simple: testing Google SEO patterns related to musics. But suddenly, it grew up so fast we decided to pivot and work on it as a real project.
@@ -191,7 +191,7 @@ export default {
               Team: <span class="">1</span>
           </p>
           <p>
-            Delix.ir is an online image text extractor (OCR) and PDF to Word converter which is built to support Persian language especially. The service provides APIs to implement it's OCR engines into customers' own applications.
+            <a href="http://delix.ir/?utm_source=portiflo&utm_medium=link&utm_content=timeline&utm_campaign=delix">Delix.ir</a> is an online image text extractor (OCR) and PDF to Word converter which is built to support Persian language especially. The service provides APIs to implement it's OCR engines into customers' own applications.
           </p>
           <p>
             The reason I founded Delix.ir (<u>D</u>ocument <u>ELIXIR</u>) was because back in school, I found out that there is an unsolved need for this kind of services especially needed by teachers. However, it wasn't developed since 2017.
@@ -246,7 +246,7 @@ export default {
               Team: <span class="">2</span>
           </p>
           <p>
-            <a href="https://smo.li">Smoli</a> is a URL shortener and link tracking platform that also allows you to add eye-catching and branded call-to-actions to any page on the web. See a demo of Forbes campaign on Business News Daily: <a href="http://smo.li/+demo-forbes">smo.li/+demo-forbes</a>.
+            <a href="https://smo.li/?utm_source=portiflo&utm_medium=link&utm_content=timeline&utm_campaign=smoli">Smoli</a> is a URL shortener and link tracking platform that also allows you to add eye-catching and branded call-to-actions to any page on the web. See a demo of Forbes campaign on Business News Daily: <a href="http://smo.li/+demo-forbes">smo.li/+demo-forbes</a>.
           </p>
           <p>
             The service was founded by <a href="https://www.linkedin.com/in/saeidhabibpour/">Saeid Habibpour</a> (CEO) and me (CTO). Currently, the MVP is ready and we're researching the market.
