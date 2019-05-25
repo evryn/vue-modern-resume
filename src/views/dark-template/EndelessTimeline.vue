@@ -123,7 +123,7 @@ export default {
         to  : 10,
       },
       {
-        text: 'So we WILL do it. There is no option! These are thing should be done, without any excuses!\nAnd HEY! There is no RESET button for your life.\nSo stop scrolling and go do whatever you must 👌',
+        text: 'So we WILL do it. There is no option! These are things should be done, without any excuses!\nAnd HEY! There is no RESET button for your life.\nStop scrolling now and go do whatever you must 👌',
         from: 11,
         to  : null,
       },

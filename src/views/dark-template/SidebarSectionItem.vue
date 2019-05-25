@@ -15,8 +15,21 @@
       <div>
         {{ item.name }}
       </div>
-      <p class="grey--text">
-        {{ item.text }}
+      <p>
+        <a
+          v-if="item.link"
+          class="grey--text"
+          :href="item.link"
+          target="_blank"
+        >
+          {{ item.text }}
+        </a>
+        <span
+          v-else
+          class="grey--text"
+        >
+          {{ item.text }}
+        </span>
       </p>
     </v-flex>
   </v-layout>

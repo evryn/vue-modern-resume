@@ -8,7 +8,7 @@
         title="Who am I?"
       >
         I'm a developer born in Iran and founder of <a href="http://delix.ir/?utm_source=portiflo&utm_medium=link&utm_content=intro&utm_campaign=delix">Delix.ir</a>, <a href="https://bytegate.ir/?utm_source=portiflo&utm_medium=link&utm_content=intro&utm_campaign=bytegate">Bytegate.ir</a> and <a href="http://bobet.ir/?utm_source=portiflo&utm_medium=link&utm_content=intro&utm_campaign=bobet">Bobet.ir</a> and co-founder of <a href="https://smo.li/?utm_source=portiflo&utm_medium=link&utm_content=intro&utm_campaign=smoli">Smo.li</a>.<br>
-        Interested and skilled in different topics of Information Technology such as programming, web development, and computer and network security.
+        I'm interested and skilled in different topics of Information Technology including programming, web development, and computer and network security.
       </main-content-section>
       <main-content-section
         v-if="prouds"
@@ -39,10 +39,10 @@
           v-for="(education, i) in educations"
           :key="i"
         >
-          <v-flex md3>
+          <v-flex md4>
             {{ education.from }} - {{ education.to }}
           </v-flex>
-          <v-flex md9>
+          <v-flex md8>
             <strong v-if="education.title">{{ education.title }}</strong>
             <div v-if="education.location">
               <i>{{ education.location }}</i>
@@ -108,8 +108,8 @@ export default {
     prouds: [
       {
         icon  : 'mdi-help-rhombus-outline',
-        text  : 'Answered 5.5M+ questions for people!',
-        source: '(Bytegate.ir sessions)',
+        text  : 'Answered 10M+ questions!',
+        source: '(Bytegate.ir post views)',
       },
       {
         icon  : 'mdi-library-music',
@@ -130,7 +130,7 @@ export default {
     educations: [
       {
         from       : '2015',
-        to         : '2019',
+        to         : '2019 (not finished yet)',
         title      : 'Bachelor\'s degree, Information Technology',
         location   : 'Seraj University',
         description: 'Became a member of University Academic Association of Computer Science',

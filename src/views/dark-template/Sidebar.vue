@@ -67,24 +67,14 @@ export default {
           title: 'INFO',
           items: [
             {
-              name: 'Address',
-              icon: 'place',
-              text: 'No 26, Shahid Gohari Alley, South Sajjadieh Quarter, Azadi St., Tabriz, IRAN',
-            },
-            {
-              name: 'Phone Number',
-              icon: 'phone',
-              text: '+98 935 7316 793',
+              name: 'Email',
+              icon: 'email',
+              text: 'hi@amirreza.in',
             },
             {
               name: 'Website',
               icon: 'web_asset',
               text: 'amirreza.in',
-            },
-            {
-              name: 'Email',
-              icon: 'email',
-              text: 'hi@amirreza.in',
             },
             {
               name: 'Birth Date',
@@ -99,18 +89,22 @@ export default {
             {
               icon: 'mdi-github-circle',
               text: 'github.com/AmirrezaNasiri',
+              link: 'https://github.com/AmirrezaNasiri',
             },
             {
               icon: 'mdi-linkedin-box',
               text: 'linkedin.com/in/amirreza-nasiri',
+              link: 'https://linkedin.com/in/amirreza-nasiri',
             },
             {
               icon: 'mdi-twitter',
               text: 'twitter.com/Amirreza_Nasiri',
+              link: 'https://twitter.com/Amirreza_Nasiri',
             },
             {
               icon: 'mdi-instagram',
               text: 'instagram.com/amirreza.n96',
+              link: 'https://instagram.com/amirreza.n96',
             },
           ],
         },
