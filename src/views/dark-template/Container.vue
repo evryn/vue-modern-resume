@@ -76,7 +76,7 @@ export default {
 <style scoped>
 #dark-template {
   height: 100%;
-  background: url("/img/backgrounds/city.jpg") no-repeat center;
+  background: url("./img/backgrounds/city.jpg") no-repeat center;
   background-size: cover;
 }
 </style>
