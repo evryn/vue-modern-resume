@@ -78,22 +78,22 @@ export default {
           items: [
             {
               name: 'Email',
-              icon: 'email',
+              icon: 'mdi-email',
               text: 'hi@amirreza.in',
             },
             {
               name: 'Website',
-              icon: 'web_asset',
+              icon: 'mdi-web',
               text: 'amirreza.in',
             },
             {
               name: 'Birth Date',
-              icon: 'cake',
+              icon: 'mdi-cake-variant',
               text: 'Dec 7, 1996',
             },
             {
               name: 'Habitation',
-              icon: 'place',
+              icon: 'mdi-map-marker',
               text: 'Tabriz, Iran',
             },
           ],
