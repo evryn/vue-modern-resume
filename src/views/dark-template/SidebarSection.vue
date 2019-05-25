@@ -32,7 +32,7 @@ import SidebarSectionItem from '@/views/dark-template/SidebarSectionItem'
 export default {
   name      : 'SidebarSection',
   components: { SidebarSectionItem },
-  props     : { options: { type: String, default: 'Section' } },
+  props     : { options: { type: Object, default: () => {} } },
 }
 </script>
 
