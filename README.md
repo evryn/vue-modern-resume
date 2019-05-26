@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a href="https://github.com/AmirrezaNasiri/vue-modern-resume">
+  <a target="_blank" href="https://amirrezanasiri.github.io/vue-modern-resume/">
     <img src="src/assets/logo.png" alt="Markdownify" width="200">
   </a>
   <br>
@@ -9,17 +9,19 @@
 </h1>
 
 <h4 align="center">
-  🚀 Want to see how it is? see
-  <a href="https://amirreza.in">
-     demo
-  </a>yourself.
+  🚀 See yourself:
+  <a href="https://amirrezanasiri.github.io/vue-modern-resume/">
+     Demo
+  </a>
 </h4>
 
 ## What is Vue Modern Resume?
 Vue Modern Resume is basically a simple (yet easy to setup) resume template based on <a href="https://vuejs.org/">Vue.js</a> framework and <a href="https://vuetifyjs.com/">Vuetify</a> UI toolkit.
 
 ## Preview
-See my own [portfolio](https://amirreza.in) as a demo built with Vue Modern Resume.
+See the [raw demo](https://amirrezanasiri.github.io/vue-modern-resume/) or my own [portfolio](https://amirreza.in) based-on Vue Modern Resume.
+
+
 
 ## How to use
 
