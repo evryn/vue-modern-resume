@@ -1,3 +1,49 @@
-# vue-modern-resume
+<h1 align="center">
+  <br>
+  <a href="https://github.com/AmirrezaNasiri/vue-modern-resume">
+    <img src="src/assets/logo.png" alt="Markdownify" width="200">
+  </a>
+  <br>
+  Vue Modern Resume
+  <br>
+</h1>
 
-A plane with a bunch of descriptions is about to land ...
+<h4 align="center">
+  🚀 Want to see how it is? see
+  <a href="https://amirreza.in">
+     demo
+  </a>yourself.
+</h4>
+
+## What is Vue Modern Resume?
+Vue Modern Resume is basically a simple (yet easy to setup) resume template based on <a href="https://vuejs.org/">Vue.js</a> framework and <a href="https://vuetifyjs.com/">Vuetify</a> UI toolkit.
+
+## Preview
+See my own [portfolio](https://amirreza.in) as a demo built with Vue Modern Resume.
+
+## How to use
+
+1. Clone this repository.
+```
+git clone https://github.com/AmirrezaNasiri/vue-modern-resume
+```
+
+2. Go to the cloned directory (e.g. `cd vue-modern-resume`).
+
+3. Run `npm install`.
+
+4. Customize your resume
+
+5. Preview resumes with `npm serve`.
+
+6. Build it with `npm build`.
+
+## Contribution
+Feel free to add your own templates, language supports, fix bugs or improve the resume. Any kind of help is appreciated! If you make any kind of changes to an existing template, please commit them as a new template.
+
+## License
+Code is licensed under the [MIT License](LICENSE).
+
+# See also Links
+* [ByteGate](https://bytegate.ir/) (our blog)
+* [تبدیل PDF به ورد](http://delix.ir/) (our sponsored service)
