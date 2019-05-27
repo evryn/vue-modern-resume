@@ -58,7 +58,8 @@
                   <v-card-text>
                     <v-layout wrap>
                       <v-flex
-                        md7
+                        :md7="!!item.image"
+                        :md12="!item.image"
                         xs12
                       >
                         <span
@@ -71,15 +72,30 @@
                         />
                       </v-flex>
                       <v-flex
+                        v-if="item.image"
                         md5
                         xs12
                       >
-                        <v-img
-                          v-if="item.image"
-                          :max-height="item.imageHeight ? item.imageHeight : ''"
+                        <div
                           class="mt-2"
-                          :src="publicPath(item.image)"
-                        />
+                        >
+                          <v-carousel
+                            v-if="Array.isArray(item.image)"
+                            :show-arrows="false"
+                            :height="325"
+                          >
+                            <v-carousel-item
+                              v-for="(citem,ci) in item.image"
+                              :key="ci"
+                              :src="publicPath(citem)"
+                            />
+                          </v-carousel>
+                          <v-img
+                            v-else
+                            :max-height="item.imageHeight ? item.imageHeight : ''"
+                            :src="publicPath(item.image)"
+                          />
+                        </div>
                       </v-flex>
                     </v-layout>
                   </v-card-text>
