@@ -15,6 +15,8 @@
   </a>yourself.
 </h4>
 
+*NOTE: All personal contents will be removed very soon on next release. Don't worry about them.*
+
 ## What is Vue Modern Resume?
 Vue Modern Resume is basically a simple (yet easy to setup) resume template based on <a href="https://vuejs.org/">Vue.js</a> framework and <a href="https://vuetifyjs.com/">Vuetify</a> UI toolkit.
 

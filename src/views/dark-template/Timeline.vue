@@ -106,7 +106,7 @@ export default {
         transparent: true,
         year       : '1996',
         title      : 'Born on Dec 7, 1996',
-        html       : 'With a chance of %0.00000000000512\nI\'m completely aware of life value!',
+        html       : 'With a chance of %0.00000000000512.<br>I\'m completely aware of value of the life!',
         icon       : 'mdi-cake-variant',
       },
       {
@@ -121,11 +121,79 @@ export default {
         detailed   : true,
         year       : '2009',
         transparent: true,
+        title      : 'Started an7.mahblog.com',
+        html       : `
+                <p>
+                    I'm still emotional about this one. It was August 9, 2009 that I decided to start blogging so <a target="_blank" href="https://web.archive.org/web/20090819185659/http://an7.mahblog.com/">an7.mahblog.com</a> has just showed up! Years later, Mahblog.com got censored in Iran and my blog disappeared. <a target="_blank" href="https://web.archive.org/web/20120626234739/http://www.an7.mahblog.com/">Last archived page</a> was on June 26, 2012.
+                </p>
+                <p>
+                    Back then, my blog used to get more than 500 visitors/day and its Page Rank has reached to level 2 which was actually great! Rest In Peace an7 ...
+                </p>
+                <p>
+                    During 2009 - 2011, many other blogs has been created too. For example:
+                    <ul>
+                        <li>
+                            <a href="https://web.archive.org/web/20100926063748/http://bro2gifs.mihanblog.com/post/5">bro2gifs.mihanblog.com</a> - we'd received banner creation orders there!
+                        </li>
+                        <li>
+                            <a href="https://web.archive.org/web/20101203082548/http://kdabs.mihanblog.com/">kdabs.mihanblog.com</a> - audio books had been published there
+                        </li>
+                        <li>
+                            <a href="http://web.archive.org/web/20100909150338/http://best1shops.mihanblog.com/">best1shops.mihanblog.com</a> - our online shop (we got our first income from there - that was amazing!)
+                        </li>
+                        <li>
+                            And many other blogs I can't really remember!
+                        </li>
+                    </ul>
+                </p>
+        `,
+        image      : 'img/timeline/an7.mahblog.com.png',
+        imageHeight: 200,
+        icon       : 'mdi-web',
+      },
+      {
+        detailed   : true,
+        year       : '2009',
+        transparent: true,
         title      : 'Created Almas-Khor Game',
         html       : 'A simple (yet almost unbeatable!) game made with Game Maker. It\'s still available for <a target="_blank" href="https://download.tebyan.net/2687/%D8%A8%D8%A7%D8%B2%DB%8C-%D8%A7%D9%84%D9%85%D8%A7%D8%B3-%D8%AE%D9%88%D8%B1">download here</a>!<br>The reason this game is pretty important for me is that it was my first published program!',
         image      : 'img/timeline/almas-khor.png',
-        imageHeight: 200,
         iconImage  : 'img/timeline/almas-khor-icon.png',
+      },
+      {
+        detailed   : true,
+        year       : '2011',
+        transparent: true,
+        title      : 'Fished Mobsters!',
+        html       : `
+          <p>
+            Oh shouldn't I include this one?! whatever ...<br>
+            It was 2011 and I'd been addicted to a game called Street Mobsters. On its IR server, which is still available on <a target="_blank" href="https://web.archive.org/web/20111005204247/https://mobgangs.com/">mobgangs.com</a>, I decided to perform a phishing attack and harvest credentials of in-game wealthy people.
+          </p>
+          <p>
+            I hosted a page similar to this one and published it inside the game via various mediums. To be honest, I didn't expect any result but about 40 people had given me their username and passwords! among them, I selected wealthiest ones and ... you know rest of the story just add a Robin Hood at the end!
+          </p>
+          <p>
+            This was the moment I realized how it is easy to actually get misused especially on the net.
+          </p>
+        `,
+        image    : 'img/timeline/street-mobsters.jpg',
+        iconImage: 'img/timeline/street-mobsters-icon.png',
+      },
+      {
+        detailed   : true,
+        year       : '2012',
+        transparent: true,
+        title      : 'Created a Botnet',
+        html       : `
+                <p>
+                    A VB6-based (yes you read it correctly! Visual Basic 6) botnet with dynamic C&Cs on Blogfa.com and many zombies. Just kidding, there were 3 infected PCs only!
+                </p>
+                <p>
+                    It was initially created to perform fraud clicks on one of PPC ads on one of my old blogs. It was designed in a way that the advertiser would almost not be able to detect the fraud.
+                </p>
+                `,
+        icon: 'mdi-desktop-classic',
       },
       {
         year : '2013',
@@ -146,6 +214,28 @@ export default {
                    </p>`,
         image    : 'img/timeline/bytegate.ir.jpg',
         iconImage: 'img/timeline/bytegate.ir-icon.png',
+      },
+      {
+        year       : '2015',
+        transparent: true,
+        title      : 'Created WifiShield',
+        html       : `
+          <p>
+              Current Status: <span class="red--text darken-3">Failed</span>,
+              Team: <span class="">1</span>
+          </p>
+          <p>
+            WifiShield supposed to be a network security application to find vulnerabilities in Wi-Fi networks and fix them by manipulating through their actual configuration user interface.          </p>
+          <p>
+            It was basically a web crawler which is designed to go to default gateway (192.168.1.1 or whatever it was configured) page and interact with its user interfec following predefined action sets.
+          </p>
+          <p>
+            <span class="red--text darken-3">Failing Reason</span>:
+             The main problem with this application was that, I couldn't gather all possible firmware/emulators of even a single brand's devices. I've only defined action sets for my own access points and left it as is.
+          </p>
+        `,
+        image    : 'img/timeline/wifi-shield.png',
+        iconImage: 'img/timeline/wifi-shield-icon.png',
       },
       {
         year : '2016',
@@ -213,6 +303,38 @@ export default {
         `,
         image    : 'img/timeline/delix.ir.png',
         iconImage: 'img/timeline/delix.ir-icon.png',
+      },
+      {
+        detailed   : true,
+        transparent: true,
+        year       : '2018',
+        title      : 'A Turning Point',
+        html       : `
+          <p>
+          It looks like that 2018 is missing from my CV isn't it? <strong>NOT AT ALL!</strong>
+          </p>
+          <p>
+          This awesome year was a turning point in my life. I found out the reason why my businesses are not growing; what I'm doing wrong; what I supposed to do and plenty of other thoughts.
+          </p>
+          <p>
+          Technically, I got familiar and tried to be best at the following technologies:
+          <ul>
+          <li>git</li>
+          <li>Laravel</li>
+          <li>Vue.js</li>
+          <li>Arduino</li>
+          <li>Ubuntu</li>
+          <li>TTD and CI/CD</li>
+          <li>Development best practices</li>
+          <li>And more ...</li>
+          </ul>
+          </p>
+          <p>
+          So please don't underestimate this card by its height in pixels. It's worth a lot to me.
+          </p>
+
+        `,
+        icon: 'mdi-cake-variant',
       },
       {
         year : '2019',
@@ -284,7 +406,7 @@ export default {
         year : 'So far ...',
         title: 'Written 340+ Unique Articles!',
         html : `I'm the guy who loves teaching! So far, I've written 340+ unique articles which most of the are computer-related. You can access them here:
-                    <ul><li><a target="_blank" href="https://bytegate.ir/author/amirrezanasiri/">My posts on Bytegate.ir</a> (Computer-related)</li><li><a target="_blank" href="http://bobet.ir/author/amirrezanasiri/">My posts on Bobet.ir</a> (Translations)</li></ul>`,
+                    <ul><li><a target="_blank" href="https://bytegate.ir/author/amirrezanasiri/">My posts on Bytegate.ir</a> (260+ Computer-related)</li><li><a target="_blank" href="http://bobet.ir/author/amirrezanasiri/">My posts on Bobet.ir</a> (80+ translations)</li></ul>`,
         icon: 'mdi-fountain-pen-tip',
       },
     ],
