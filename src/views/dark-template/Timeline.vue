@@ -41,19 +41,26 @@
             <template v-slot:opposite />
             <v-layout>
               <v-flex
+                v-if="$vuetify.breakpoint.smAndUp"
                 md1
-                xs3
+                sm2
                 align-self-center
               >
                 <span>{{ item.year }}</span>
               </v-flex>
               <v-flex
                 md11
-                xs9
+                sm10
+                xs12
               >
                 <v-card class="elevation-1">
                   <v-card-title class="pb-0">
-                    <h3>{{ item.title }}</h3>
+                    <div>
+                      <p v-if="$vuetify.breakpoint.xsOnly">
+                        {{ item.year }}
+                      </p>
+                      <h3>{{ item.title }}</h3>
+                    </div>
                   </v-card-title>
                   <v-card-text>
                     <v-layout wrap>
