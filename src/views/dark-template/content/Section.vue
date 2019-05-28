@@ -33,7 +33,7 @@
 
 <script>
 export default {
-  name      : 'MainContentSection',
+  name      : 'ContentSection',
   components: { },
   props     : { title: { type: String, default: '' } },
 }

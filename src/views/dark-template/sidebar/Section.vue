@@ -28,7 +28,7 @@
 </template>
 
 <script>
-import SidebarSectionItem from '@/views/dark-template/SidebarSectionItem'
+import SidebarSectionItem from '@/views/dark-template/sidebar/SectionItem'
 export default {
   name      : 'SidebarSection',
   components: { SidebarSectionItem },

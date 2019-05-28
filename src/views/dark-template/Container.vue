@@ -21,18 +21,18 @@
                 <v-flex
                   md4
                 >
-                  <sidebar class="fill-height" />
+                  <sidebar-container class="fill-height" />
                 </v-flex>
                 <v-flex
                   md8
                 >
-                  <main-content class="fill-height" />
+                  <content-container class="fill-height" />
                 </v-flex>
               </v-layout>
               <v-layout>
                 <v-flex md12>
-                  <timeline />
-                  <endless-timeline />
+                  <timeline-primary />
+                  <timeline-endless />
                 </v-flex>
               </v-layout>
             </v-flex>
@@ -44,18 +44,19 @@
 </template>
 
 <script>
-import Sidebar from '@/views/dark-template/Sidebar'
-import MainContent from '@/views/dark-template/MainContent'
-import Timeline from '@/views/dark-template/Timeline'
+import SidebarContainer from '@/views/dark-template/sidebar/Container'
+import ContentContainer from '@/views/dark-template/content/Container'
+import TimelinePrimary from '@/views/dark-template/timeline/Primary'
+import TimelineEndless from '@/views/dark-template/timeline/Endless'
 import LeaderLine from 'leader-line'
-import EndlessTimeline from '@/views/dark-template/EndelessTimeline'
+
 export default {
   name      : 'DarkTemplateContainer',
   components: {
-    EndlessTimeline,
-    Timeline,
-    MainContent,
-    Sidebar,
+    TimelineEndless,
+    TimelinePrimary,
+    ContentContainer,
+    SidebarContainer,
   },
   mounted () {
     // eslint-disable-next-line no-unused-vars

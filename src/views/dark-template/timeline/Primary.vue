@@ -4,7 +4,7 @@
     light
   >
     <v-card-text>
-      <main-content-section
+      <content-section
         id="timeline"
         :title="detailed ? 'My Life in a Nutshell' : 'My Experiences'"
       >
@@ -111,16 +111,16 @@
             </v-layout>
           </v-timeline-item>
         </v-timeline>
-      </main-content-section>
+      </content-section>
     </v-card-text>
   </v-card>
 </template>
 
 <script>
-import MainContentSection from '@/views/dark-template/MainContentSection'
+import ContentSection from '@/views/dark-template/content/Section'
 export default {
   name      : 'Timeline',
-  components: { MainContentSection },
+  components: { ContentSection },
   data      : () => ({
     detailed: true,
     items   : [

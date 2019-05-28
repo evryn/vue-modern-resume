@@ -6,7 +6,7 @@
     <v-card-text class="text-xs-center">
       <h4>OK ... OK ... My CV has just been finished here but not my journey!</h4>
       <div>Don't believe me? keep scrolling!</div>
-      <main-content-section>
+      <content-section>
         <v-timeline>
           <v-timeline-item
             v-for="n in futurePage * 2"
@@ -34,7 +34,7 @@
             <vcl-code />
           </v-timeline-item>
         </v-timeline>
-      </main-content-section>
+      </content-section>
       <div
         v-if="toggleMessage"
         class="ma-4"
@@ -57,14 +57,14 @@
 </template>
 
 <script>
-import MainContentSection from '@/views/dark-template/MainContentSection'
+import ContentSection from '@/views/dark-template/content/Section'
 import VueContentLoading, { VclCode } from 'vue-content-loading'
 import { debounce } from 'lodash'
 
 export default {
   name      : 'EndlessTimeline',
   components: {
-    MainContentSection, VueContentLoading, VclCode,
+    ContentSection, VueContentLoading, VclCode,
   },
   data: () => ({
     futurePage   : 0,

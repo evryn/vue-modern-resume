@@ -65,8 +65,8 @@
 </template>
 
 <script>
-import Avatar from '@/views/dark-template/Avatar'
-import SidebarSection from '@/views/dark-template/SidebarSection'
+import Avatar from '@/views/dark-template/sidebar/Avatar'
+import SidebarSection from '@/views/dark-template/sidebar/Section'
 export default {
   name      : 'Sidebar',
   components: { SidebarSection, Avatar },
