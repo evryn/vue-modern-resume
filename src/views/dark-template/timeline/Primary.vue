@@ -23,11 +23,10 @@
           <v-timeline-item
             v-for="(item, i) in orderedItems"
             :key="i"
-            :icon="item.icon ? item.icon : ''"
+            :icon="item.icon || ''"
             :class="{transparent: item.transparent}"
             large
           >
-            <!-- TODO: Cleanup :icon and similar -->
             <template
               v-if="item.iconImage"
               v-slot:icon
@@ -74,10 +73,12 @@
                             v-if="item.text"
                             class="pre"
                           >{{ item.text }}</span>
+                          <!-- eslint-disable vue/no-v-html -->
                           <div
                             v-else-if="item.html"
                             v-html="item.html"
                           />
+                          <!-- eslint-enable vue/no-v-html -->
                         </div>
                       </v-flex>
                       <v-flex
@@ -182,7 +183,7 @@ export default {
         transparent: true,
         title      : 'Created Almas-Khor Game',
         html       : 'A simple (yet almost unbeatable!) game made with Game Maker. It\'s still available for <a target="_blank" href="https://download.tebyan.net/2687/%D8%A8%D8%A7%D8%B2%DB%8C-%D8%A7%D9%84%D9%85%D8%A7%D8%B3-%D8%AE%D9%88%D8%B1">download here</a>!<br>The reason this game is pretty important for me is that it was my first published program!',
-        image      : 'img/timeline/almas-khor.png',
+        image      : 'img/timeline/almas-khor.jpg',
         iconImage  : 'img/timeline/almas-khor-icon.png',
       },
       {
@@ -215,7 +216,7 @@ export default {
                     A VB6-based (yes you read it correctly! Visual Basic 6) botnet with dynamic C&Cs on Blogfa.com and many zombies. Just kidding, there were 3 infected PCs only!
                 </p>
                 <p>
-                    It was initially created to perform fraud clicks on one of PPC ads on one of my old blogs. It was designed in a way that the advertiser would almost not be able to detect the fraud.
+                    It was initially created to perform fraud clicks on one of PPC ads on one of my old blogs. It was designed in a way that the advertiser would not be able to detect the fraud easily.
                 </p>
                 `,
         icon: 'mdi-desktop-classic',
@@ -239,6 +240,23 @@ export default {
                    </p>`,
         image    : 'img/timeline/bytegate.ir.jpg',
         iconImage: 'img/timeline/bytegate.ir-icon.png',
+      },
+      {
+        detailed   : true,
+        year       : '2014-15',
+        transparent: true,
+        title      : 'Created a Captcha Solving Farm',
+        /* eslint-disable no-useless-escape */
+        html       : `
+                <p>
+                    I was inspired by a blog post about captcha solving techniques and made my own captcha solving farm and built some basic APIs for <span style="background-color: #d1d1d1;">/(bad)?/g</span> guys to use it.
+                </p>
+                <p>
+                    It was initially created to make me millionaire (!) however, it was never even published since I couldn't find a way to receive money from outside of Iran. It was a stupid try in fact! 🤦‍♂️
+                </p>
+                `,
+        /* eslint-enable no-useless-escape */
+        icon: 'mdi-worker',
       },
       {
         year       : '2015',
@@ -366,7 +384,7 @@ export default {
         title: 'Open Sourced Telegram Web Bridge',
         html : `
           <p>
-              Current Status: <span class="light-blue--text lighten-3">Open Sourced</span> and available on my <a target="_blank" href="https://github.com/AmirrezaNasiri/telegram-web-bridge">my GitHub</a>
+              Current Status: <span class="light-blue--text lighten-3">Open Sourced</span><br>Available on: <a target="_blank" href="https://github.com/AmirrezaNasiri/telegram-web-bridge">AmirrezaNasiri/telegram-web-bridge</a>
           </p>
           <p>
             Telegram Web Bridge is a two-way, web-based, proxy-like application which can act as a middleman for Telegram Bot API requests (from your real application to Telegram) and Webhooks (from Telegram to your real application).
@@ -383,7 +401,7 @@ export default {
         title: 'Open Sourced USB Keystroke Injector',
         html : `
           <p>
-              Current Status: <span class="light-blue--text lighten-3">Open Sourced</span> and available on my <a target="_blank" href="https://github.com/AmirrezaNasiri/usb-keystroke-injector">my GitHub</a>
+              Current Status: <span class="light-blue--text lighten-3">Open Sourced</span><br>Available on: <a target="_blank" href="https://github.com/AmirrezaNasiri/usb-keystroke-injector">AmirrezaNasiri/usb-keystroke-injector</a>
           </p>
           <p>
             An Arduino-based keyboard emulator which injects (types) a sequence of letters sent via Bluetooth protocol or from predefined SD card payloads. Demo GIF is available on the GitHub page.
@@ -418,7 +436,7 @@ export default {
         title: 'Open Sourced This Resume',
         html : `
           <p>
-              Current Status: <span class="light-blue--text lighten-3">Open Sourced</span> and available on my <a target="_blank" href="https://github.com/AmirrezaNasiri/vue-modern-resume">my GitHub</a>
+              Current Status: <span class="light-blue--text lighten-3">Open Sourced</span><br>Available on: <a target="_blank" href="https://github.com/AmirrezaNasiri/vue-modern-resume">AmirrezaNasiri/vue-modern-resume</a>
           </p>
           <p>
             A VueJS-based and powered-by-Vuetify (material UI kit) resume template which you're seeing right now!
@@ -426,6 +444,24 @@ export default {
         `,
         image: 'img/timeline/vue-modern-resume.png',
         icon : 'mdi-github-circle',
+      },
+      {
+        year : '2019',
+        title: 'Published Vue Registrar Package',
+        html : `
+          <p>
+              Current Status: <span class="light-blue--text lighten-3">Published</span><br>Available on: <a target="_blank" href="https://github.com/AmirrezaNasiri/vue-registrar">AmirrezaNasiri/vue-registrar</a>
+          </p>
+          <p>
+            A Vue.js package that makes developers' code a lot cleaner and much more understandable. It's consisted of two features that:
+            <ul>
+                <li>Registers all your common and frequently used components globally and ends the need for importing them manually;</li>
+                <li>Assembles all your vuex modules in a nested manner.</li>
+            </ul>
+          </p>
+        `,
+        image    : 'img/timeline/vue-registrar-demo.png',
+        iconImage: 'img/timeline/vue-registrar-logo.png',
       },
       {
         year : 'So far ...',
