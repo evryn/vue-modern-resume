@@ -48,6 +48,6 @@ Feel free to add your own templates, language supports, fix bugs or improve the 
 ## License
 Code is licensed under the [MIT License](LICENSE).
 
-# See also Links
+# See Also
 * [ByteGate](https://bytegate.ir/) (our blog)
 * [تبدیل PDF به ورد](http://delix.ir/) (our sponsored service)
