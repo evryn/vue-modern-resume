@@ -159,13 +159,13 @@ export default {
                     During 2009 - 2011, many other blogs has been created too. For example:
                     <ul>
                         <li>
-                            <a href="https://web.archive.org/web/20100926063748/http://bro2gifs.mihanblog.com/post/5">bro2gifs.mihanblog.com</a> - we'd received banner creation orders there!
+                            <a href="https://web.archive.org/web/20100926063748/http://bro2gifs.mihanblog.com/post/5">bro2gifs.mihanblog.com</a> - we were receiving banner designing orders there!
                         </li>
                         <li>
-                            <a href="https://web.archive.org/web/20101203082548/http://kdabs.mihanblog.com/">kdabs.mihanblog.com</a> - audio books had been published there
+                            <a href="https://web.archive.org/web/20101203082548/http://kdabs.mihanblog.com/">kdabs.mihanblog.com</a> - we were publishing audio books there
                         </li>
                         <li>
-                            <a href="http://web.archive.org/web/20100909150338/http://best1shops.mihanblog.com/">best1shops.mihanblog.com</a> - our online shop (we got our first income from there - that was amazing!)
+                            <a href="http://web.archive.org/web/20100909150338/http://best1shops.mihanblog.com/">best1shops.mihanblog.com</a> - it was our first online shop and we got our first income from there. The feeling of that moment was awesome!
                         </li>
                         <li>
                             And many other blogs I can't really remember!
@@ -226,14 +226,14 @@ export default {
         title: 'Founded Bytegate.ir',
         html : `
                     <p>
-                        Current Status: <span class="green--text accent-4">Active</span>,
+                        Current status: <span class="green--text accent-4">Active</span>,
                         Team: <span class="">1-5 person(s) (variable)</span>
                     </p>
                     <p>
                         The main goal of <a target="_blank" href="https://bytegate.ir/?utm_source=portiflo&utm_medium=link&utm_content=timeline&utm_campaign=bytegate">Bytegate.ir</a> is to extend IT-related articles in Persian web with pretty easy-to-understand and picture-driven articles.
                     </p>
                     <p>
-                        The reason I founded Bytegate.ir was because of a dispute about computer stuffs back in school. Soon, I realized that I know NOTHING about computers! Bytegate.ir is the place I started learning amazing things.
+                        The reason I founded Bytegate.ir was because of a dispute about computer stuffs back in school. Soon, I realized that I know NOTHING about computers! Bytegate.ir is the place I've started learning amazing things.
                     </p>
                     <p>
                         Currently there are 600+ articles on the website which helps 4000+ people each day. It's been helping 4 people to cover small part of their expenses.
@@ -252,7 +252,7 @@ export default {
                     I was inspired by a blog post about captcha solving techniques and made my own captcha solving farm and built some basic APIs for <span style="background-color: #d1d1d1;">/(bad)?/g</span> guys to use it.
                 </p>
                 <p>
-                    It was initially created to make me millionaire (!) however, it was never even published since I couldn't find a way to receive money from outside of Iran. It was a stupid try in fact! 🤦‍♂️
+                    It was initially created to make me millionaire (!) however, it was never even published since I couldn't find a way to receive money from outside of Iran. It was a stupid attempt in fact! 🤦‍♂️
                 </p>
                 `,
         /* eslint-enable no-useless-escape */
@@ -264,7 +264,7 @@ export default {
         title      : 'Created WifiShield',
         html       : `
           <p>
-              Current Status: <span class="red--text darken-3">Failed</span>,
+              Current status: <span class="red--text darken-3">Failed</span>,
               Team: <span class="">1</span>
           </p>
           <p>
@@ -274,7 +274,7 @@ export default {
           </p>
           <p>
             <span class="red--text darken-3">Failing Reason</span>:
-             The main problem with this application was that, I couldn't gather all possible firmware/emulators of even a single brand's devices. I've only defined action sets for my own access points and left it as is.
+             The main problem with this application was that, I wasn't able to gather all possible firmware/emulators of devices of even a single brand. And of course, every version of a specific models may come in a different firmware version and thus different UI. I've only defined action sets for my own access points and left it as is.
           </p>
         `,
         image    : 'img/timeline/wifi-shield.png',
@@ -285,7 +285,7 @@ export default {
         title: 'Founded Bobet.ir',
         html : `
           <p>
-              Current Status: <span class="orange--text lighten-1">Taking last breaths</span>,
+              Current status: <span class="orange--text lighten-1">Taking last breaths</span>,
               Team: <span class="">1-6 person(s) (variable)</span>
           </p>
           <p>
@@ -308,7 +308,7 @@ export default {
         title      : 'Founded Telepad',
         html       : `
           <p>
-              Current Status: <span class="red--text darken-3">Failed</span>,
+              Current status: <span class="red--text darken-3">Failed</span>,
               Team: <span class="">1</span>
           </p>
           <p>
@@ -319,7 +319,7 @@ export default {
           </p>
           <p>
             <span class="red--text darken-3">Failing Reason</span>:
-             Well, I was alone and couldn't handle its development since I'd been working on other projects.<br />
+             Well, I was alone and couldn't handle its development since I'd been working on other projects too.<br />
              Starting from there, slowly, I understood the actual value of having a team and focusing on a specific business.
           </p>
         `,
@@ -331,11 +331,11 @@ export default {
         title: 'Founded Delix.ir',
         html : `
           <p>
-              Current Status: <span class="green--text accent-4">Active</span>,
+              Current status: <span class="green--text accent-4">Active</span>,
               Team: <span class="">1</span>
           </p>
           <p>
-            <a target="_blank" href="http://delix.ir/?utm_source=portiflo&utm_medium=link&utm_content=timeline&utm_campaign=delix">Delix.ir</a> is an online image text extractor (OCR) and PDF to Word converter which is built to support Persian language especially. The service provides APIs to implement its OCR engines into customers' own applications.
+            <a target="_blank" href="http://delix.ir/?utm_source=portiflo&utm_medium=link&utm_content=timeline&utm_campaign=delix">Delix.ir</a> is an online image text extractor (OCR) and PDF to Word converter which is built to support Persian language especially. The service also provides APIs to implement its OCR engines into customers' own applications.
           </p>
           <p>
             The reason I founded Delix.ir (<u>D</u>ocument <u>ELIXIR</u>) was because back in school, I found out that there is an unsolved need for this kind of services especially needed by teachers. However, it wasn't developed since 2017.
@@ -357,10 +357,10 @@ export default {
           It looks like that 2018 is missing from my CV isn't it? <strong>NOT AT ALL!</strong>
           </p>
           <p>
-          This awesome year was a turning point in my life. I found out the reason why my businesses are not growing; what I'm doing wrong; what I supposed to do and plenty of other thoughts.
+          This awesome year was a turning point in my life. I found out the reason why my businesses are not growing; what I'm doing wrong; what I've supposed to do and plenty of other thoughts.
           </p>
           <p>
-          Technically, I got familiar and tried to be best at the following technologies:
+          Technically, I got familiar with and tried to be best (not yet of course!) at the following technologies:
           <ul>
           <li>git</li>
           <li>Laravel</li>
@@ -384,13 +384,13 @@ export default {
         title: 'Open Sourced Telegram Web Bridge',
         html : `
           <p>
-              Current Status: <span class="light-blue--text lighten-3">Open Sourced</span><br>Available on: <a target="_blank" href="https://github.com/AmirrezaNasiri/telegram-web-bridge">AmirrezaNasiri/telegram-web-bridge</a>
+              Current status: <span class="light-blue--text lighten-3">Open Sourced</span><br>Available on: <a target="_blank" href="https://github.com/AmirrezaNasiri/telegram-web-bridge">AmirrezaNasiri/telegram-web-bridge</a>
           </p>
           <p>
-            Telegram Web Bridge is a two-way, web-based, proxy-like application which can act as a middleman for Telegram Bot API requests (from your real application to Telegram) and Webhooks (from Telegram to your real application).
+            Telegram Web Bridge is a bidirectional, web-based, proxy-like application which can act as a middleman for Telegram Bot API requests (from your actual application to Telegram) and Webhooks (from Telegram to your actual application).
           </p>
           <p>
-            It was initially developed because of Telegram censorship in Iran and the need for it in a storage management software built with C#. I decided to publish the codes so anyone with the same problem will be able to handle it.
+            It was initially developed because of Telegram censorship in Iran and the need for it in a storage management software we've built. I decided to publish the codes so anyone with the same problem will be able to handle it.
           </p>
         `,
         image: 'img/timeline/telegram-web-bridge.png',
@@ -401,10 +401,10 @@ export default {
         title: 'Open Sourced USB Keystroke Injector',
         html : `
           <p>
-              Current Status: <span class="light-blue--text lighten-3">Open Sourced</span><br>Available on: <a target="_blank" href="https://github.com/AmirrezaNasiri/usb-keystroke-injector">AmirrezaNasiri/usb-keystroke-injector</a>
+            Current status: <span class="light-blue--text lighten-3">Open Sourced</span><br>Available on: <a target="_blank" href="https://github.com/AmirrezaNasiri/usb-keystroke-injector">AmirrezaNasiri/usb-keystroke-injector</a>
           </p>
           <p>
-            An Arduino-based keyboard emulator which injects (types) a sequence of letters sent via Bluetooth protocol or from predefined SD card payloads. Demo GIF is available on the GitHub page.
+            An Arduino-based keyboard emulator which injects (i.e. types) a sequence of letters received via Bluetooth protocol or read from predefined SD card payloads. Demo GIF is available on the GitHub page.
           </p>
           <p>
             It was initially a university project, made at 2018 but I decided to extend it a little bit and publish it on my GitHub.
@@ -418,14 +418,14 @@ export default {
         title: 'Co-Founded Smo.li',
         html : `
           <p>
-              Current Status: <span class="green--text accent-4">Active</span>,
+              Current status: <span class="green--text accent-4">Active</span>,
               Team: <span class="">2</span>
           </p>
           <p>
             <a target="_blank" href="https://smo.li/?utm_source=portiflo&utm_medium=link&utm_content=timeline&utm_campaign=smoli">Smoli</a> is a URL shortener and link tracking platform that also allows you to add eye-catching and branded call-to-actions to any page on the web. See a demo of Forbes campaign on Business News Daily: <a target="_blank" href="http://smo.li/+demo-forbes">smo.li/+demo-forbes</a>.
           </p>
           <p>
-            The service was founded by <a target="_blank" href="https://www.linkedin.com/in/saeidhabibpour/">Saeid Habibpour</a> (CEO) and me (CTO). Currently, the MVP is ready and we're researching the market.
+            The service has been founded by <a target="_blank" href="https://www.linkedin.com/in/saeidhabibpour/">Saeid Habibpour</a> (CEO) and me (CTO). Currently, the MVP is ready and we're researching the market.
           </p>
         `,
         image    : 'img/timeline/smo.li.png',
@@ -436,10 +436,10 @@ export default {
         title: 'Open Sourced This Resume',
         html : `
           <p>
-              Current Status: <span class="light-blue--text lighten-3">Open Sourced</span><br>Available on: <a target="_blank" href="https://github.com/AmirrezaNasiri/vue-modern-resume">AmirrezaNasiri/vue-modern-resume</a>
+              Current status: <span class="light-blue--text lighten-3">Open Sourced</span><br>Available on: <a target="_blank" href="https://github.com/AmirrezaNasiri/vue-modern-resume">AmirrezaNasiri/vue-modern-resume</a>
           </p>
           <p>
-            A VueJS-based and powered-by-Vuetify (material UI kit) resume template which you're seeing right now!
+            A Vue.js-based and powered-by-Vuetify (material UI kit) resume template which you're seeing right now!
           </p>
         `,
         image: 'img/timeline/vue-modern-resume.png',
@@ -450,7 +450,7 @@ export default {
         title: 'Published Vue Registrar Package',
         html : `
           <p>
-              Current Status: <span class="light-blue--text lighten-3">Published</span><br>Available on: <a target="_blank" href="https://github.com/AmirrezaNasiri/vue-registrar">AmirrezaNasiri/vue-registrar</a>
+              Current status: <span class="light-blue--text lighten-3">Published</span><br>Available on: <a target="_blank" href="https://github.com/AmirrezaNasiri/vue-registrar">AmirrezaNasiri/vue-registrar</a>
           </p>
           <p>
             A Vue.js package that makes developers' code a lot cleaner and much more understandable. It's consisted of two features that:
@@ -466,7 +466,7 @@ export default {
       {
         year : 'So far ...',
         title: 'Written 340+ Unique Articles!',
-        html : `I'm the guy who loves teaching! So far, I've written 340+ unique articles which most of the are computer-related. You can access them here:
+        html : `I'm the guy who loves teaching! So far, I've written 340+ unique articles which most of them are computer-related. You can access them here:
                     <ul><li><a target="_blank" href="https://bytegate.ir/author/amirrezanasiri/">My posts on Bytegate.ir</a> (260+ Computer-related)</li><li><a target="_blank" href="http://bobet.ir/author/amirrezanasiri/">My posts on Bobet.ir</a> (80+ translations)</li></ul>`,
         icon: 'mdi-fountain-pen-tip',
       },

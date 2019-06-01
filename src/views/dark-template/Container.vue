@@ -69,8 +69,7 @@ export default {
       {
         size      : 2,
         color     : this.$vuetify.theme.primary,
-        startLabel: LeaderLine.captionLabel('To The Journey ...'),
-        // middleLabel: LeaderLine.pathLabel('This is additional label'),
+        startLabel: LeaderLine.captionLabel('To the Journey ...'),
       }
     )
   },

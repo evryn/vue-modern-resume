@@ -62,8 +62,11 @@
       <content-section
         v-if="skills"
         id="to-timeline"
-        title="Skills and Expertize"
+        title="Skills"
       >
+        <template slot="actions">
+          (% are relative not absolute)
+        </template>
         <v-layout wrap>
           <template
             v-for="(skill, i) in skills"
@@ -161,7 +164,7 @@ export default {
         value: 90,
       },
       {
-        title: 'VueJS Framework',
+        title: 'Vue.js Framework',
         icon : 'mdi-vuejs',
         value: 90,
       },
@@ -209,7 +212,12 @@ export default {
       },
       { divider: true },
       {
-        title: 'Content Marketing (+340 done)',
+        title: 'Leadership',
+        icon : 'mdi-account-group',
+        value: 68,
+      },
+      {
+        title: 'Content Marketing (+340 articles)',
         icon : 'mdi-text',
         value: 96,
       },

@@ -153,7 +153,7 @@ export default {
             },
             {
               icon: 'mdi-karate',
-              text: 'Karate',
+              text: 'Sports',
             },
             {
               icon: 'mdi-music',
@@ -169,7 +169,7 @@ export default {
             },
             {
               icon: 'mdi-android-debug-bridge',
-              text: 'Making Bugs!',
+              text: 'Tickling Bugs!',
             },
           ],
         },
