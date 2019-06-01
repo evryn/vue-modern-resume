@@ -80,7 +80,9 @@ export default {
 <style scoped>
 #dark-template {
   height: 100%;
-  background: url("../img/backgrounds/city.jpg") no-repeat center;
+  background: #66668d;
+  background: -webkit-linear-gradient(to left, #66668d, #4389a2);
+  background: linear-gradient(to left, #66668d, #4389a2);
   background-size: cover;
 }
 </style>
