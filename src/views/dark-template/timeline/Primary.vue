@@ -69,14 +69,16 @@
                         :md12="!item.image"
                         xs12
                       >
-                        <span
-                          v-if="item.text"
-                          class="pre"
-                        >{{ item.text }}</span>
-                        <div
-                          v-else-if="item.html"
-                          v-html="item.html"
-                        />
+                        <div class="mr-1">
+                          <span
+                            v-if="item.text"
+                            class="pre"
+                          >{{ item.text }}</span>
+                          <div
+                            v-else-if="item.html"
+                            v-html="item.html"
+                          />
+                        </div>
                       </v-flex>
                       <v-flex
                         v-if="item.image"
