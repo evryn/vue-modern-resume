@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a target="_blank" href="https://amirrezanasiri.github.io/vue-modern-resume/">
+  <a target="_blank" href="https://evryn.github.io/vue-modern-resume/">
     <img src="src/assets/logo.png" alt="Markdownify" width="200">
   </a>
   <br>
@@ -10,7 +10,7 @@
 
 <h4 align="center">
   🚀 See yourself:
-  <a href="https://amirrezanasiri.github.io/vue-modern-resume/">
+  <a href="https://evryn.github.io/vue-modern-resume/">
      Demo
   </a>
 </h4>
@@ -21,7 +21,7 @@
 Vue Modern Resume is basically a simple (yet easy to setup) resume template based on <a href="https://vuejs.org/">Vue.js</a> framework and <a href="https://vuetifyjs.com/">Vuetify</a> UI toolkit.
 
 ## Preview
-See the [raw demo](https://amirrezanasiri.github.io/vue-modern-resume/) or my own [portfolio](https://amirreza.in) based-on Vue Modern Resume.
+See the [raw demo](https://evryn.github.io/vue-modern-resume/) or my own [portfolio](https://amirreza.in) based-on Vue Modern Resume.
 
 
 
@@ -29,7 +29,7 @@ See the [raw demo](https://amirrezanasiri.github.io/vue-modern-resume/) or my ow
 
 1. Clone this repository.
 ```
-git clone https://github.com/AmirrezaNasiri/vue-modern-resume
+git clone https://github.com/evryn/vue-modern-resume
 ```
 
 2. Go to the cloned directory (e.g. `cd vue-modern-resume`).
