@@ -1,20 +1,22 @@
 version: 0.2
 
-phases: 
-    install:
-        runtime-versions:
-            nodejs: latest
-        commands:
-            - echo "installing something"
-    pre_build:
-        commands: 
-            - echo "we are in the pre build phase"
-    build:
-        commands:
-            - echo "we are in the build block"
-            - echo "we will run some tests"
-            - grep -Fq "Congratulations" index.html
-    post_build:
-        commands:
-            - echo "we are in the post build phase"
-            
+phases:
+  install:
+    commands:
+      - echo "install yarn"
+      - npm install -g yarn
+  pre_build:
+    commands:
+      - echo "install install"
+      - yarn install
+  build:
+    commands:
+      - echo "install build"
+      - yarn build
+  post_build:
+    commands:
+      - echo nothing to do
+artifacts:
+  files:
+    - '**/*'
+  base-directory: dist
