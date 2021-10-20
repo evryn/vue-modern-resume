@@ -3,11 +3,12 @@ version: 0.2
 phases:
   install:
     commands:
+      - cd client
       - echo "install yarn"
       - npm install -g yarn
   pre_build:
     commands:
-      - echo "install install"
+      - echo "yarn install"
       - yarn install
   build:
     commands:
@@ -15,7 +16,7 @@ phases:
       - yarn build
   post_build:
     commands:
-      - echo nothing to do
+      - echo run successfuly
 artifacts:
   files:
     - '**/*'

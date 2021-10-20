@@ -11,6 +11,7 @@
     "core-js": "^2.6.5",
     "leader-line": "^1.0.5",
     "vue": "^2.6.10",
+    "vue-cli-plugin-s3-deploy": "^4.0.0-rc4",
     "vue-content-loading": "^1.6.0",
     "vuetify": "^1.5.5"
   },
