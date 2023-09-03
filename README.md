@@ -1,5 +1,6 @@
 > **Warning**
 > This repository is archived for read-only purpose and is not maintained anymore. If you're a Vue.js developer and interested in maintaining this repository, [create a new discussion](https://github.com/evryn/vue-modern-resume/discussions/new?category=generall) and let us know, please.
+> At the meanwhile, you can explore [forks](https://github.com/evryn/vue-modern-resume/forks) to see how people use this template to make their portfolios! 🥰
 
 <h1 align="center">
   <br>
